@@ -1,1 +1,3 @@
 .claude
+temp/*
+.playwright-cli/
