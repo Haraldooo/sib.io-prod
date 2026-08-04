@@ -456,7 +456,6 @@ section .section-subtitle {
    Cards (Services, Experience, Industries, AI)
    ============================================================ */
 .services-grid,
-.experience-grid,
 .ai-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -464,7 +463,6 @@ section .section-subtitle {
 }
 
 .service-card,
-.experience-item,
 .ai-card {
   display: flex;
   flex-direction: column;
@@ -478,20 +476,17 @@ section .section-subtitle {
 .services .service-card {
   background-color: var(--surface-page);
 }
-.experience .experience-item,
 .ai-section .ai-card {
   background-color: var(--surface-raised);
 }
 
 .service-card:hover,
-.experience-item:hover,
 .ai-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
 .service-icon,
-.experience-icon,
 .ai-icon {
   width: 48px;
   height: 48px;
@@ -505,7 +500,6 @@ section .section-subtitle {
 }
 
 .service-title,
-.experience-title,
 .ai-title {
   font-size: 22px;
   line-height: 30px;
@@ -515,7 +509,6 @@ section .section-subtitle {
 }
 
 .service-desc,
-.experience-desc,
 .ai-desc {
   font-size: 15px;
   line-height: 24px;
@@ -548,12 +541,113 @@ section .section-subtitle {
   background: var(--mod-c, var(--accent-secondary));
 }
 
-.experience-years {
-  font-size: 48px;
+/* ============================================================
+   Unsere Erfahrung — Schriftlogo, Jahreszahl, Kompetenz-Liste
+   ============================================================ */
+.exp-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.exp-logo {
+  width: clamp(176px, 22vw, 248px);
+  height: auto;
+  margin-bottom: 48px;
+}
+
+.exp-years {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.exp-years-value {
+  font-size: clamp(72px, 12vw, 128px);
   line-height: 1;
   font-weight: 700;
-  letter-spacing: -0.8px;
-  color: var(--accent-secondary);
+  letter-spacing: -2px;
+  color: var(--text-primary);
+}
+.exp-years-unit {
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: var(--text-primary);
+}
+
+.exp-lead {
+  font-size: 19px;
+  line-height: 30px;
+  color: var(--text-secondary);
+  max-width: 620px;
+}
+
+.exp-divider {
+  width: 100%;
+  max-width: 1040px;
+  height: 1px;
+  border: 0;
+  background-color: var(--border-default);
+  margin-block: 56px;
+}
+
+/* Kompetenzen als Fließtext-Liste, getrennt durch bunte CI-Punkte */
+.exp-skills {
+  --dot-size: 7px;
+  --dot-blue: var(--color-brand-blue);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 18px;
+  max-width: 1000px;
+  list-style: none;
+}
+.exp-skills li {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.exp-skills li::after {
+  content: "";
+  flex: 0 0 auto;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: var(--radius-full);
+  background-color: var(--dot-c);
+}
+.exp-skills li:last-child { gap: 0; }
+.exp-skills li:last-child::after { display: none; }
+
+/* Punkte laufen bunt gemischt im Vierer-Rhythmus durch die CI-Palette */
+.exp-skills li:nth-child(4n + 1) { --dot-c: var(--color-brand-teal);   }
+.exp-skills li:nth-child(4n + 2) { --dot-c: var(--dot-blue);           }
+.exp-skills li:nth-child(4n + 3) { --dot-c: var(--color-brand-pink);   }
+.exp-skills li:nth-child(4n)     { --dot-c: var(--color-brand-yellow); }
+
+@media (prefers-color-scheme: dark) {
+  /* CI-Blau auf dunklem Grund aufgehellt (gleiche Aufhellung wie --accent-primary) */
+  .exp-skills { --dot-blue: #6C72B0; }
+}
+
+@media (max-width: 640px) {
+  .exp-logo { margin-bottom: 40px; }
+  .exp-lead { font-size: 17px; line-height: 26px; }
+  .exp-divider { margin-block: 40px; }
+  .exp-skills {
+    gap: 8px 14px;
+    font-size: 16px;
+  }
+  .exp-skills li { gap: 14px; font-size: 16px; line-height: 26px; }
 }
 
 /* ============================================================
@@ -1031,29 +1125,36 @@ footer p:last-child { margin-top: 12px; }
   <div class="container">
     <p class="eyebrow eyebrow-center">Expertise</p>
     <h2>Unsere Erfahrung</h2>
-    <p class="section-subtitle">Mehr als 20 Jahre Erfahrung in der IT-Beratung und Umsetzung komplexer Projekte</p>
 
-    <div class="experience-grid">
-      <div class="experience-item">
-        <div class="experience-years">20+</div>
-        <h3 class="experience-title">Jahre Erfahrung</h3>
-        <p class="experience-desc">In IT-Beratung und -Service sowie in der Programmierung invidueller Lösungen.</p>
-      </div>
-      <div class="experience-item">
-        <div class="experience-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-        <h3 class="experience-title">IT-Sicherheit</h3>
-        <p class="experience-desc">IT-Sicherheit steht für einige unserer Kunden an oberster Stelle. Neben internen Audits, bieten wir auch entsprechende Beratung und Schulungen an.</p>
-      </div>
-      <div class="experience-item">
-        <div class="experience-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg></div>
-        <h3 class="experience-title">Microsoft 365/ Google Workspace Expertise</h3>
-        <p class="experience-desc">Umfassende Expertise in der Implementierung, Absicherung und Optimierung von Kollaborations- und Produktivitäts-Lösungen</p>
-      </div>
-      <div class="experience-item">
-        <div class="experience-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-1.9 5.8L4.5 10l5.6 1.2L12 17l1.9-5.8L19.5 10l-5.6-1.2L12 3Z"/><path d="M5 3v4"/><path d="M3 5h4"/><path d="M19 17v4"/><path d="M17 19h4"/></svg></div>
-        <h3 class="experience-title">KI-Innovationen</h3>
-        <p class="experience-desc">Wir entwickeln bereits kleine individualisierte KI-Lösungen und Fine-Tuning für kundenspezifische Anwendungsfälle</p>
-      </div>
+    <div class="exp-panel">
+      <img class="exp-logo" src="/assets/logos/sib_wordmark.svg" width="741" height="225" alt="sib.io" loading="lazy" decoding="async">
+
+      <p class="exp-years">
+        <span class="exp-years-value">20+</span>
+        <span class="exp-years-unit">Jahre</span>
+      </p>
+      <p class="exp-lead">In IT-Beratung und -Service sowie in der Programmierung individueller Lösungen.</p>
+
+      <hr class="exp-divider">
+
+      <ul class="exp-skills">
+        <li>IT-Beratung</li>
+        <li>Managed Services</li>
+        <li>IT-Sicherheit</li>
+        <li>Audits</li>
+        <li>Microsoft 365</li>
+        <li>Google Workspace</li>
+        <li>Cloud-Migration</li>
+        <li>Backup &amp; Recovery</li>
+        <li>Netzwerk &amp; Firewall</li>
+        <li>Individualentwicklung</li>
+        <li>Schnittstellen &amp; APIs</li>
+        <li>Automatisierung</li>
+        <li>KI-Integration</li>
+        <li>Fine-Tuning</li>
+        <li>Schulungen</li>
+        <li>Support</li>
+      </ul>
     </div>
   </div>
 </section>
