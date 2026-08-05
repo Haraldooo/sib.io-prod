@@ -359,6 +359,20 @@ h3 {
   margin-bottom: 64px;
 }
 
+/* H1, die optisch wie ein .section-subtitle wirkt (Schriftart, -größe, -gewicht) */
+h1.section-subtitle {
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: var(--text-muted);
+}
+
+/* Erste Zeile eines zweiteiligen Subtitle-Blocks: enger Abstand zum Folgetext */
+.section-subtitle--lead {
+  margin-bottom: 8px;
+}
+
 /* ============================================================
    Header / Hero
    ============================================================ */
@@ -985,7 +999,8 @@ footer p:last-child { margin-top: 12px; }
   <div class="container">
     <p class="eyebrow eyebrow-center">Portfolio</p>
     <h2>Unsere Leistungen</h2>
-    <p class="section-subtitle">Mit 20 Jahren Erfahrung unterstützen wir Unternehmen dabei, ihre IT-Infrastruktur zu optimieren, sicherer zu gestalten und effizient digital zu arbeiten.</p>
+    <h1 class="section-subtitle section-subtitle--lead">Maßgeschneiderte KI- &amp; Software-Entwicklungen für den Mittelstand</h1>
+    <p class="section-subtitle">Wir entwickeln individuelle Software, integrieren KI-Lösungen und sichern die IT-Infrastruktur für mittelständische Unternehmen.</p>
 
     <div class="sib-scan sib-scan--embedded" id="sib-scan">
   <div class="sib-scan__inner">
