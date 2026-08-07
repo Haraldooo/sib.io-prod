@@ -1,0 +1,7 @@
+# robots.txt für https://sib.io/
+# Die gesamte Website darf indexiert werden.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sib.io/sitemap.xml
