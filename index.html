@@ -28,125 +28,210 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://sib.io",
-  "name": "sib.io",
-  "alternateName": "sib.io — Inhaber Harald Öhl",
-  "image": "https://sib.io/og-card.png",
-  "logo": "https://sib.io/assets/logos/sib_square-image-logo.svg",
-  "url": "https://sib.io",
-  "sameAs": [
-    "https://www.linkedin.com/company/sib-io/",
-    "https://share.google/rxdjIinaKrVUH0BBe"
-  ],
-  "slogan": "simple is better, small is beautiful.",
-  "vatID": "DE253147210",
-  "telephone": [
-    "+4973114112113",
-    "+491708322979"
-  ],
-  "email": "hallo@sib.io",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Auf der Insel 2",
-    "addressLocality": "Ulm",
-    "postalCode": "89073",
-    "addressCountry": "DE"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "48.3974",
-    "longitude": "9.9929"
-  },
-  "description": "Ihr IT-Partner in Ulm. Wir entwickeln individuelle Software, programmieren spezifische KI-Lösungen und begleiten & beraten KMUs bei ihrer IT-Infrastruktur und IT-Sicherheit.",
-  "priceRange": "€€€",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "09:00",
-    "closes": "17:00"
-  },
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": "48.3974",
-      "longitude": "9.9929"
-    },
-    "geoRadius": "100000"
-  },
-  "knowsAbout": [
-    "IT Infrastructure",
-    "Cloud Computing",
-    "IT Security",
-    "CRM Systems",
-    "Software Development",
-    "Microsoft 365",
-    "Google Workspace",
-    "AI Solutions",
-    "Online Marketing",
-    "SEO"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "IT Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "IT-Infrastruktur & Cloud",
-          "description": "Ihr IT-Partner in Ulm. Wir entwickeln individuelle Software, programmieren spezifische KI-Lösungen und begleiten & beraten KMUs bei ihrer IT-Infrastruktur und IT-Sicherheit."
-        }
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "LocalBusiness"
+      ],
+      "@id": "https://sib.io/#organization",
+      "name": "sib.io",
+      "legalName": "sib.io — Inhaber Harald Öhl",
+      "url": "https://sib.io/",
+      "description": "Ihr IT-Partner in Ulm. Wir entwickeln individuelle Software, programmieren spezifische KI-Lösungen und begleiten & beraten KMUs bei ihrer IT-Infrastruktur und IT-Sicherheit.",
+      "slogan": "simple is better, small is beautiful.",
+      "foundingDate": "2006",
+      "vatID": "DE253147210",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sib.io/#logo",
+        "url": "https://sib.io/apple-touch-icon.png",
+        "contentUrl": "https://sib.io/apple-touch-icon.png",
+        "width": 180,
+        "height": 180,
+        "caption": "sib.io"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "IT-Sicherheit",
-          "description": "Umfassende Sicherheitskonzepte zum Schutz Ihrer Daten und IT-Systeme. Cyber Security"
-        }
+      "image": "https://sib.io/og-card.png",
+      "founder": {
+        "@id": "https://sib.io/#harald-oehl"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "IT-Beratung",
-          "description": "Ihr IT-Partner in Ulm. Wir entwickeln individuelle Software, programmieren spezifische KI-Lösungen und begleiten & beraten KMUs bei ihrer IT-Infrastruktur und IT-Sicherheit."
-        }
+      "email": "hallo@sib.io",
+      "telephone": [
+        "+49731141121130",
+        "+491708322979"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Auf der Insel 2",
+        "postalCode": "89073",
+        "addressLocality": "Ulm",
+        "addressRegion": "Baden-Württemberg",
+        "addressCountry": "DE"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Web- & Software-Entwicklung",
-          "description": "Maßgeschneiderte IT-Lösungen für Ihre Anforderungen"
-        }
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "48.3974",
+        "longitude": "9.9929"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Schulungen",
-          "description": "Schulungen für Mitarbeiter zu IT-Sicherheit, Datenschutz, Software und KI-Anwendung"
+      "areaServed": [
+        {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "48.3974",
+            "longitude": "9.9929"
+          },
+          "geoRadius": "100000"
+        },
+        {
+          "@type": "Country",
+          "name": "Deutschland"
         }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Digitale Außenwirkung",
-          "description": "Strategie und Umsetzung zur digitalen Präsenz und Kundengewinnung"
-        }
+      ],
+      "priceRange": "€€€",
+      "sameAs": [
+        "https://www.linkedin.com/company/sib-io/",
+        "https://share.google/rxdjIinaKrVUH0BBe"
+      ],
+      "knowsAbout": [
+        "IT Infrastructure",
+        "Cloud Computing",
+        "IT Security",
+        "CRM Systems",
+        "Software Development",
+        "Microsoft 365",
+        "Google Workspace",
+        "AI Solutions",
+        "Online Marketing",
+        "SEO"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT-Leistungen",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Infrastruktur & Cloud",
+              "alternateName": "sib.operate",
+              "description": "Hardware, Software und Netzwerke. Moderne IT-Infrastrukturen, die Ihre Arbeitsprozesse erleichtern und Ihrem Unternehmen Wachstum ermöglichen.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT-Sicherheit, Cyber-Security",
+              "alternateName": "sib.secure",
+              "description": "Umfassende Sicherheitskonzepte zum Schutz Ihrer Daten und Systeme vor aktuellen Bedrohungen.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT-Beratung in allen Bereichen",
+              "alternateName": "sib.consult",
+              "description": "Bedarfsanalyse, Digitale Transformation. Von der Analyse des Ist-Zustandes, über Beratung zu IT-Trendthemen, bis hin zur Begleitung der Einführung neuer Systeme bis zum Go-Live.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web- & Software-Entwicklung",
+              "alternateName": "sib.automate",
+              "description": "Maßgeschneiderte Lösungen, die genau auf Ihre Anforderungen zugeschnitten sind.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "KI-Lösungen",
+              "alternateName": "sib.automate",
+              "description": "Use-Case-Identifikation, Datenvorbereitung, Entwicklung und Systemintegration. Von der Umsetzung einer spezifischen KI-Anwendung bis hin zur individuellen KI-Strategie passend für Ihr Unternehmen.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schulungen",
+              "alternateName": "sib.school",
+              "description": "Auf Ihre Bedürfnisse abgestimmte Schulungen für Ihre Mitarbeiter zu den Themen Sicherheit, Microsoft 365, Datenschutz, IT-Grundlagen und KI-Anwendung.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digitale Außenwirkung",
+              "alternateName": "sib.amplify",
+              "description": "Strategien und Umsetzung Ihrer digitalen Präsenz für Kundengewinnung und nachhaltiges Wachstum.",
+              "provider": {
+                "@id": "https://sib.io/#organization"
+              }
+            }
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sib.io/#harald-oehl",
+      "name": "Harald Öhl",
+      "jobTitle": "Inhaber",
+      "worksFor": {
+        "@id": "https://sib.io/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sib.io/#website",
+      "url": "https://sib.io/",
+      "name": "sib.io",
+      "description": "Ihr IT-Partner in Ulm. Wir entwickeln individuelle Software, programmieren spezifische KI-Lösungen und begleiten & beraten KMUs bei ihrer IT-Infrastruktur und IT-Sicherheit.",
+      "inLanguage": "de-DE",
+      "publisher": {
+        "@id": "https://sib.io/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sib.io/#webpage",
+      "url": "https://sib.io/",
+      "name": "sib.io | IT-Beratung aus Ulm",
+      "description": "Ihr IT-Partner in Ulm. Wir entwickeln individuelle Software, programmieren spezifische KI-Lösungen und begleiten & beraten KMUs bei ihrer IT-Infrastruktur und IT-Sicherheit.",
+      "inLanguage": "de-DE",
+      "isPartOf": {
+        "@id": "https://sib.io/#website"
+      },
+      "about": {
+        "@id": "https://sib.io/#organization"
+      },
+      "primaryImageOfPage": "https://sib.io/og-card.png"
+    }
+  ]
 }
 </script>
 
@@ -1726,7 +1811,7 @@ footer p:last-child { margin-top: 12px; }
     <div class="contact-grid">
       <div class="contact-item">
         <div class="contact-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div class="contact-text">Anschrift:<br>Judenhof 1<br>89073 Ulm</div>
+        <div class="contact-text">Anschrift:<br>Auf der Insel 2<br>89073 Ulm</div>
       </div>
 
       <div class="contact-item">
