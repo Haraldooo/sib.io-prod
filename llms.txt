@@ -1,0 +1,40 @@
+# sib.io
+
+> IT-Beratung, Individualsoftware und KI-Entwicklung aus Ulm. sib.io begleitet mittelständische Unternehmen bei IT-Infrastruktur, IT-Sicherheit, Softwareentwicklung und dem produktiven Einsatz von künstlicher Intelligenz.
+
+sib.io ist ein inhabergeführtes IT-Consulting-Unternehmen mit Sitz in Ulm (Baden-Württemberg, Deutschland), tätig seit 2006. Inhaber ist Harald Öhl. Der Fokus liegt auf kleinen und mittleren Unternehmen (KMU), die individuelle statt von der Stange gebaute Lösungen brauchen — von der Bedarfsanalyse über die Umsetzung bis zum laufenden Betrieb.
+
+Das Leitmotiv lautet „simple is better, small is beautiful." Betreut werden nationale und internationale Kunden aus Finanzen, Rechtsberatung, Gesundheit, Architektur & Bauwesen, HR, Dienstleistungen, Kunst & Kultur, Design, Automobil, Pharma und Medizintechnik.
+
+Die Website ist eine einzelne Seite; alle Inhalte sind über Sprungmarken auf https://sib.io/ erreichbar.
+
+## Leistungen
+
+- [Infrastruktur & Cloud — sib.operate](https://sib.io/#services): Hardware, Software und Netzwerke. Moderne IT-Infrastrukturen, die Arbeitsprozesse erleichtern und Wachstum ermöglichen.
+- [IT-Sicherheit & Cyber-Security — sib.secure](https://sib.io/#services): Umfassende Sicherheitskonzepte zum Schutz von Daten und Systemen vor aktuellen Bedrohungen.
+- [IT-Beratung — sib.consult](https://sib.io/#services): Bedarfsanalyse und digitale Transformation. Von der Analyse des Ist-Zustandes über Beratung zu IT-Trendthemen bis zur Begleitung neuer Systeme bis zum Go-Live.
+- [Web- & Software-Entwicklung — sib.automate](https://sib.io/#services): Maßgeschneiderte Lösungen, zugeschnitten auf die konkreten Anforderungen des Kunden.
+- [KI-Lösungen — sib.automate](https://sib.io/#services): Use-Case-Identifikation, Datenvorbereitung, Entwicklung und Systemintegration. Von der einzelnen KI-Anwendung bis zur unternehmensweiten KI-Strategie.
+- [Schulungen — sib.school](https://sib.io/#services): Abgestimmte Schulungen für Mitarbeitende zu IT-Sicherheit, Microsoft 365, Datenschutz, IT-Grundlagen und KI-Anwendung.
+- [Digitale Außenwirkung — sib.amplify](https://sib.io/#services): Strategie und Umsetzung der digitalen Präsenz für Kundengewinnung und nachhaltiges Wachstum.
+
+## KI-Schwerpunkte
+
+- [Model-Fine-Tuning](https://sib.io/#services): Anpassung von KI-Modellen an spezifische Anwendungsfälle — auch mit kleinen Modellen, die vollständig lokal betrieben werden können.
+- [Individualisierte Skills, Gems, Agenten & GPTs](https://sib.io/#services): Maßgeschneiderte KI-Assistenten auf Basis von Claude, Gemini, Copilot, ChatGPT oder lokalen Modellen.
+- [RAG-Projekte](https://sib.io/#services): Retrieval-Augmented Generation für intelligente Informationssuche und -verarbeitung.
+- [KI-Schulungen](https://sib.io/#services): Möglichkeiten, Grenzen und Datenschutzfragen von KI — bedarfsgerecht für Mitarbeitende aufbereitet.
+
+## Kompetenzen
+
+- [Technologien und Themen](https://sib.io/#services): Microsoft 365, Google Workspace, IT-Sicherheit, KI-Integration, Web-Entwicklung, Software-Entwicklung, Cloud-Migration, Backup & Recovery, Netzwerk & Firewall, Individualentwicklung, Schnittstellen & APIs, Automatisierung, Infrastruktur, Cloud Security, Schulungen, IT-Beratung & Support.
+
+## Kontakt
+
+- [Kontaktangaben](https://sib.io/#contact): E-Mail hallo@sib.io, Telefon +49 731 14112113-0, Mobil +49 170 8322979. Anschrift: Auf der Insel 2, 89073 Ulm, Deutschland.
+- [LinkedIn](https://www.linkedin.com/company/sib-io/): Unternehmensprofil.
+
+## Rechtliches
+
+- [Impressum](https://sib.io/#impressum): Angaben gemäß § 5 TMG. Inhaber Harald Öhl, USt-IdNr. DE253147210.
+- [Datenschutzerklärung](https://sib.io/#datenschutz): Umgang mit personenbezogenen Daten. Die Website lädt keine externen Ressourcen (Schriften sind selbst gehostet, keine CDN-Requests).
