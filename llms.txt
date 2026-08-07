@@ -10,7 +10,7 @@ Die Website ist eine einzelne Seite; alle Inhalte sind über Sprungmarken auf ht
 
 ## Leistungen
 
-Wir sind Vor-Ort, sprechen die Sprache von kleinen und mittelständischen Unternehmen und haben einblick in viele verschiedene Branchen.
+Wir sind Vor-Ort, sprechen die Sprache von kleinen und mittelständischen Unternehmen und haben Einblick in viele verschiedene Branchen.
 Somit profitieren alle unsere Kunden von den Anforderungen aller. Unter Leistungen im kurzen Überblick:
 
 - [Infrastruktur & Cloud — sib.operate](https://sib.io/#services): Hardware, Software und Netzwerke. Moderne IT-Infrastrukturen, die Arbeitsprozesse erleichtern und Wachstum ermöglichen.
