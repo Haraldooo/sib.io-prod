@@ -555,6 +555,81 @@ section .section-subtitle {
 }
 
 /* ============================================================
+   Unser Team — runde Portraits
+   ============================================================ */
+.team { background-color: var(--surface-page); }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(32px, 5vw, 64px);
+  margin-top: 48px;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background-color: var(--surface-sunken);
+  margin-bottom: 24px;
+  box-shadow: 0 0 0 6px var(--surface-page), 0 0 0 7px var(--border-default);
+  transition: box-shadow 200ms ease;
+}
+.team-member:hover .team-avatar,
+.team-member:focus-within .team-avatar {
+  box-shadow: 0 0 0 6px var(--surface-page), 0 0 0 8px var(--accent-secondary);
+}
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.team-name {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+.team-role {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.team-contact {
+  display: flex;
+  gap: 10px;
+}
+.team-contact a {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background-color: var(--surface-sunken);
+  color: var(--text-primary);
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+.team-contact a:hover {
+  background-color: var(--color-brand-wordmark);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.team-contact svg { width: 20px; height: 20px; }
+
+@media (max-width: 860px) {
+  .team-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .team-avatar, .team-contact a { transition: none; }
+  .team-contact a:hover { transform: none; }
+}
+
+/* ============================================================
    Unsere Erfahrung — Schriftlogo, Jahreszahl, Kompetenz-Liste
    ============================================================ */
 .exp-panel {
@@ -993,6 +1068,51 @@ footer p:last-child { margin-top: 12px; }
     <div class="gradient-bar"></div>
   </div>
 </header>
+
+<section id="team" class="team">
+  <div class="container">
+    <p class="eyebrow eyebrow-center">Team</p>
+    <h2>Unser Team</h2>
+
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="assets/harald-oehl.jpg" srcset="assets/harald-oehl.jpg 1x, assets/harald-oehl-2x.jpg 2x" width="160" height="160" alt="Harald Öhl" loading="lazy" decoding="async">
+        </div>
+        <h3 class="team-name">Harald Öhl</h3>
+        <p class="team-role">Inhaber | IT-Consultant</p>
+        <p class="team-contact">
+          <a href="mailto:harald.oehl@sib.io?subject=Anfrage%20an%20Harald%20%C3%96hl" aria-label="E-Mail an Harald Öhl" title="E-Mail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg></a>
+          <a href="https://www.linkedin.com/in/haraldooo/" target="_blank" rel="noopener noreferrer" aria-label="Harald Öhl auf LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 9h3v10H5zM6.5 4.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10 9h2.9v1.4h.05c.4-.76 1.4-1.6 2.9-1.6 3.1 0 3.65 2 3.65 4.7V19h-3v-4.8c0-1.15 0-2.6-1.6-2.6s-1.85 1.25-1.85 2.5V19H10z"/></svg></a>
+        </p>
+      </div>
+
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="assets/eva-maria-kast.jpg" width="160" height="160" alt="Eva-Maria Kast" loading="lazy" decoding="async">
+        </div>
+        <h3 class="team-name">Eva-Maria Kast</h3>
+        <p class="team-role">IT- &amp; Marketing Consultant</p>
+        <p class="team-contact">
+          <a href="mailto:eva.kast@sib.io?subject=Anfrage%20an%20Eva-Maria%20Kast" aria-label="E-Mail an Eva-Maria Kast" title="E-Mail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg></a>
+          <a href="https://www.linkedin.com/in/eva-maria-kast-323b3020b/" target="_blank" rel="noopener noreferrer" aria-label="Eva-Maria Kast auf LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 9h3v10H5zM6.5 4.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10 9h2.9v1.4h.05c.4-.76 1.4-1.6 2.9-1.6 3.1 0 3.65 2 3.65 4.7V19h-3v-4.8c0-1.15 0-2.6-1.6-2.6s-1.85 1.25-1.85 2.5V19H10z"/></svg></a>
+        </p>
+      </div>
+
+      <div class="team-member">
+        <div class="team-avatar">
+          <img src="assets/onenkala.jpg" width="160" height="160" alt="Onenkala" loading="lazy" decoding="async">
+        </div>
+        <h3 class="team-name">Onenkala</h3>
+        <p class="team-role">Customer Marketing</p>
+        <p class="team-contact">
+          <a href="mailto:onenkala@sib.io?subject=Anfrage%20an%20Onenkala" aria-label="E-Mail an Onenkala" title="E-Mail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg></a>
+          <a href="https://www.linkedin.com/in/onenkala-k%C3%BCchle/" target="_blank" rel="noopener noreferrer" aria-label="Onenkala auf LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 9h3v10H5zM6.5 4.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10 9h2.9v1.4h.05c.4-.76 1.4-1.6 2.9-1.6 3.1 0 3.65 2 3.65 4.7V19h-3v-4.8c0-1.15 0-2.6-1.6-2.6s-1.85 1.25-1.85 2.5V19H10z"/></svg></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="services" class="services">
   <div class="container">
