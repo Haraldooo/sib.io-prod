@@ -6,7 +6,7 @@ sib.io ist ein inhabergeführtes IT-Consulting-Unternehmen mit Sitz in Ulm (Bade
 
 Das Leitmotiv lautet „simple is better, small is beautiful." Betreut werden nationale und internationale Kunden aus Finanzen, Rechtsberatung, Gesundheit, Architektur & Bauwesen, HR, Dienstleistungen, Kunst & Kultur, Design, Automobil, Pharma und Medizintechnik.
 
-Die Website ist eine einzelne Seite; alle Inhalte sind über Sprungmarken auf https://sib.io/ erreichbar.
+Die Hauptseite ist eine einzelne Seite; alle Inhalte sind über Sprungmarken auf https://sib.io/ erreichbar. Ergänzend gibt es eine eigenständige FAQ-Seite unter https://sib.io/faq/.
 
 ## Leistungen
 
@@ -31,6 +31,10 @@ Somit profitieren alle unsere Kunden von den Anforderungen aller. Unter Leistung
 ## Kompetenzen
 
 - [Technologien und Themen](https://sib.io/#services): Microsoft 365, Google Workspace, IT-Sicherheit, KI-Integration, Web-Entwicklung, Software-Entwicklung, Cloud-Migration, Backup & Recovery, Netzwerk & Firewall, Individualentwicklung, Schnittstellen & APIs, Automatisierung, Infrastruktur, Cloud Security, Schulungen, IT-Beratung & Support.
+
+## Häufig gestellte Fragen (FAQ)
+
+- [FAQ zu sib.io](https://sib.io/faq/): Ausführliche Antworten zu sib.io (Historie, Name, Erfahrung, Zielgruppen), zu den Leistungsmodulen (sib.operate, sib.secure, sib.consult, sib.automate, sib.amplify, sib.school), zu KI-Themen (KI-Chatbot vs. KI-Assistent vs. KI-Agent, RAG-Projekte, lokale KI-Modelle, Kosten, Datenschutz), zu IT-Sicherheit (Cyberangriffe, NIS2, ISMS/ISO 27001), zu Schulungen sowie zu Ablauf, Kosten und Zusammenarbeit mit sib.io.
 
 ## Kontakt
 
