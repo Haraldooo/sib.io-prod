@@ -6,7 +6,7 @@ sib.io ist ein inhabergeführtes IT-Consulting-Unternehmen mit Sitz in Ulm (Bade
 
 Das Leitmotiv lautet „simple is better, small is beautiful." Betreut werden nationale und internationale Kunden aus Finanzen, Rechtsberatung, Gesundheit, Architektur & Bauwesen, HR, Dienstleistungen, Kunst & Kultur, Design, Automobil, Pharma und Medizintechnik.
 
-Die Hauptseite ist eine einzelne Seite; alle Inhalte sind über Sprungmarken auf https://sib.io/ erreichbar. Ergänzend gibt es eine eigenständige FAQ-Seite unter https://sib.io/faq/.
+Die Hauptseite ist eine einzelne Seite; alle Inhalte sind über Sprungmarken auf https://sib.io/ erreichbar. Ergänzend gibt es eigenständige Landingpages: eine FAQ-Seite unter https://sib.io/faq/ und eine Schulungs-Seite unter https://sib.io/schulungen/.
 
 ## Leistungen
 
@@ -18,7 +18,7 @@ Somit profitieren alle unsere Kunden von den Anforderungen aller. Unter Leistung
 - [IT-Beratung — sib.consult](https://sib.io/#services): Bedarfsanalyse und digitale Transformation. Von der Analyse des Ist-Zustandes über Beratung zu IT-Trendthemen bis zur Begleitung neuer Systeme bis zum Go-Live.
 - [Web- & Software-Entwicklung — sib.automate](https://sib.io/#services): Maßgeschneiderte Lösungen, zugeschnitten auf die konkreten Anforderungen des Kunden.
 - [KI-Lösungen — sib.automate](https://sib.io/#services): Use-Case-Identifikation, Datenvorbereitung, Entwicklung und Systemintegration. Von der einzelnen KI-Anwendung bis zur unternehmensweiten KI-Strategie.
-- [Schulungen — sib.school](https://sib.io/#services): Abgestimmte Schulungen für Mitarbeitende zu IT-Sicherheit, Microsoft 365, Datenschutz, IT-Grundlagen und KI-Anwendung. Support-Kosten durch Mitarbeiterkompetenz senken.
+- [Schulungen — sib.school](https://sib.io/schulungen/): Praxisnahe Schulungen für Mitarbeitende, Teams und ganze Abteilungen zu IT-Sicherheit & Awareness, Microsoft 365, Datenschutz, IT-Grundlagen und KI-Anwendung — vor Ort im Unternehmen, online oder inhouse im Büro von sib.io in Ulm. Unterstützt Unternehmen bei den seit Februar 2025 geltenden KI-Kompetenz-Anforderungen des EU AI Act. Eigenständige Landingpage mit Themenübersicht, Formaten und FAQ.
 - [Digitale Außenwirkung — sib.amplify](https://sib.io/#services): Strategie und Umsetzung der digitalen Präsenz für Kundengewinnung und nachhaltiges Wachstum.
 
 ## KI-Schwerpunkte
@@ -31,6 +31,10 @@ Somit profitieren alle unsere Kunden von den Anforderungen aller. Unter Leistung
 ## Kompetenzen
 
 - [Technologien und Themen](https://sib.io/#services): Microsoft 365, Google Workspace, IT-Sicherheit, KI-Integration, Web-Entwicklung, Software-Entwicklung, Cloud-Migration, Backup & Recovery, Netzwerk & Firewall, Individualentwicklung, Schnittstellen & APIs, Automatisierung, Infrastruktur, Cloud Security, Schulungen, IT-Beratung & Support.
+
+## Schulungen (sib.school)
+
+- [Schulungen für Mitarbeitende](https://sib.io/schulungen/): Eigenständige Landingpage zu sib.school. Themen: IT-Sicherheit & Awareness, Microsoft 365, Datenschutz, IT-Grundlagen, KI-Anwendung. Drei Formate: vor Ort im Unternehmen, online, inhouse im Büro von sib.io (Judenhof 1, 89073 Ulm). Für einzelne Mitarbeitende, Teams und ganze Abteilungen, zugeschnitten auf Rolle und Kenntnisstand. Relevant für die seit Februar 2025 geltende Pflicht aus dem EU AI Act, für ausreichende KI-Kompetenz der Mitarbeitenden zu sorgen. Enthält eigene FAQ-Sektion zu Format, Zielgruppen und Kosten der Schulungen.
 
 ## Häufig gestellte Fragen (FAQ)
 
