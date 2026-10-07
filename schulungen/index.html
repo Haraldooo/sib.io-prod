@@ -405,9 +405,13 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 .format-card p { font-size: 15px; line-height: 23px; color: #C9D2E3; }
 @media (max-width: 1024px) { .format-grid { grid-template-columns: 1fr; } }
 
-/* FAQ */
-.sch-faq__head { max-width: 640px; margin-bottom: 40px; }
-.sch-faq__list { max-width: 820px; }
+/* FAQ (zweispaltig, wie /faq/) */
+.sch-faq__inner { display: grid; grid-template-columns: 260px 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.sch-faq__intro { position: sticky; top: 2rem; }
+.sch-faq__intro .eyebrow { margin-bottom: 12px; }
+.sch-faq__intro p.lead-text { font-size: 15px; line-height: 23px; color: var(--text-muted); margin: 12px 0 0; }
+.sch-faq__intro .sch-faq__cta { margin-top: 24px; font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+.sch-faq__intro .sch-faq__cta a { color: var(--text-primary); font-weight: 600; }
 .sch-faq__item { border-bottom: 1px solid var(--border-default); }
 .sch-faq__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; }
 .sch-faq__item summary::-webkit-details-marker { display: none; }
@@ -420,6 +424,10 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 .sch-faq__item[open] .sch-faq__icon::before, .sch-faq__item[open] .sch-faq__icon::after { background: var(--text-inverse); transform: translate(-50%,-50%) rotate(180deg); }
 .sch-faq__a { padding: 0 2.5rem 24px 0; }
 .sch-faq__a p { margin: 0; font-size: 16px; line-height: 25px; color: var(--text-secondary); max-width: 68ch; }
+@media (max-width: 1024px) {
+  .sch-faq__inner { grid-template-columns: 1fr; }
+  .sch-faq__intro { position: static; margin-bottom: 8px; }
+}
 @media (max-width: 640px) { .sch-faq__a { padding-right: 0; } }
 
 /* KONTAKT (dunkle Box, wie .contact auf der Startseite) */
@@ -650,11 +658,14 @@ footer p { margin-bottom: 8px; }
 
   <section id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="sch-faq__head">
-        <p class="eyebrow">FAQ</p>
-        <h2 id="faq-title">Häufige Fragen zu sib.school</h2>
-      </div>
-      <div class="sch-faq__list">
+      <div class="sch-faq__inner">
+        <div class="sch-faq__intro">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title" style="font-size: 30px; line-height: 38px;">Häufige Fragen zu sib.school</h2>
+          <p class="lead-text">Antworten rund um Themen, Formate und Zielgruppen unserer Schulungen.</p>
+          <p class="sch-faq__cta">Ihre Frage ist nicht dabei? Schreiben Sie uns an <a href="mailto:hallo@sib.io">hallo@sib.io</a> oder stöbern Sie in unseren <a href="/faq/">häufig gestellten Fragen</a>.</p>
+        </div>
+        <div class="sch-faq__list">
         <details class="sch-faq__item" open>
           <summary><h3 class="sch-faq__q">Finden die Schulungen vor Ort, online oder im Büro statt?</h3><span class="sch-faq__icon" aria-hidden="true"></span></summary>
           <div class="sch-faq__a"><p>Alle drei Formate sind möglich: vor Ort in Ihrem Unternehmen, online oder inhouse im Büro von sib.io im Judenhof 1 in Ulm. Vor Ort eignet sich besonders für Teams, die an ihren eigenen Systemen lernen; online für verteilte Standorte; inhouse für eine konzentrierte Lernumgebung abseits des Tagesgeschäfts. Inhalte, Umfang und Format stimmen wir individuell ab.</p></div>
@@ -679,8 +690,8 @@ footer p { margin-bottom: 8px; }
           <summary><h3 class="sch-faq__q">Was kostet eine Schulung bei sib.school?</h3><span class="sch-faq__icon" aria-hidden="true"></span></summary>
           <div class="sch-faq__a"><p>Das hängt von Thema, Teilnehmerzahl und Format ab. Pauschalpreise ohne Kenntnis Ihrer Situation wären unseriös. Im kostenlosen Erstgespräch klären wir Ihren Bedarf, und Sie erhalten anschließend ein transparentes Angebot, bevor Kosten entstehen.</p></div>
         </details>
+        </div>
       </div>
-      <p style="margin-top: 24px; font-size: 15px; color: var(--text-muted);">Weitere Antworten rund um sib.io finden Sie in unseren <a href="/faq/">häufig gestellten Fragen</a>.</p>
     </div>
   </section>
 
