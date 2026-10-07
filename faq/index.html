@@ -444,6 +444,7 @@
   --color-brand-teal:     #01B3C4;
   --surface-page:   #FFFFFF;
   --surface-raised: #FAFAFA;
+  --surface-sunken: #F2F2F2;
   --text-primary:   #17253F;
   --text-secondary: #374151;
   --text-muted:     #6B7280;
@@ -456,6 +457,7 @@
   :root {
     --surface-page:   #0E1622;
     --surface-raised: #1F2A3A;
+    --surface-sunken: #0A1019;
     --text-primary:   #FFFFFF;
     --text-secondary: #E5E5E5;
     --text-muted:     #9CA3AF;
@@ -562,23 +564,30 @@ a:hover { opacity: 0.85; }
 }
 .faq-cta h2 { font-size: 26px; line-height: 34px; margin-bottom: 12px; color: var(--text-primary); }
 .faq-cta p { color: var(--text-secondary); max-width: 560px; margin: 0 auto 24px; }
+.faq-cta .cta-btn { color: #FFFFFF; }
 
-/* Footer */
+/* Footer (wie auf der Startseite) */
 footer {
-  background-color: var(--surface-raised);
-  padding-block: 48px;
+  background-color: var(--surface-sunken);
+  padding: 48px 0 32px;
+  text-align: center;
   font-size: 14px;
   color: var(--text-muted);
 }
 .footer-links {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 8px 20px;
+  gap: 24px;
   margin-bottom: 16px;
 }
-.footer-links a { color: var(--text-secondary); font-weight: 500; }
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
 .footer-links a:hover { color: var(--accent-secondary); }
 footer p { margin-bottom: 8px; }
+footer p:last-child { margin-top: 12px; }
 </style>
 
 <!-- ===== sib.io FAQ-SEKTION: START ===== -->
@@ -1048,6 +1057,7 @@ footer p { margin-bottom: 8px; }
       <a href="/#datenschutz">Datenschutzerklärung</a>
     </div>
     <p>© 2026 sib.io. USt.-IdNr.: DE253147210</p>
+    <p style="font-size: 13px;">Warum sib.io? Kurze Domain, lange Erfahrung.<br>Simpel ist besser.<br><a href="https://en.wikipedia.org/wiki/Small_Is_Beautiful">Small Is Beautiful</a></p>
   </div>
 </footer>
 
