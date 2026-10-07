@@ -440,6 +440,8 @@
 :root {
   --color-brand-wordmark: #17253F;
   --color-brand-blue:     #3B4496;
+  --color-brand-yellow:   #FFD732;
+  --color-brand-teal:     #01B3C4;
   --surface-page:   #FFFFFF;
   --surface-raised: #FAFAFA;
   --text-primary:   #17253F;
@@ -488,11 +490,9 @@ a:hover { opacity: 0.85; }
   .container { padding-inline: 32px; }
 }
 
-/* Mini-Header */
-.faq-topbar {
-  border-bottom: 1px solid var(--border-default);
-  padding-block: 20px;
-}
+/* Mini-Header (dunkel, wie /schulungen/) */
+.faq-topbar { padding-block: 20px; background-color: var(--color-brand-wordmark); }
+@media (prefers-color-scheme: dark) { .faq-topbar { background-color: #0A1019; } }
 .faq-topbar__inner {
   display: flex;
   align-items: center;
@@ -506,7 +506,14 @@ a:hover { opacity: 0.85; }
   flex: 0 0 auto;
 }
 .faq-topbar__logo svg { display: block; width: 100%; height: auto; }
-.faq-topbar__logo .wordmark-fill { fill: var(--text-primary); }
+.faq-topbar__logo .wordmark-fill { fill: #FFFFFF; }
+.faq-topbar__nav { display: flex; align-items: center; gap: 28px; }
+.faq-topbar__back { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #C9D2E3; }
+.faq-topbar__back:hover { opacity: 1; color: #FFFFFF; }
+.faq-topbar .cta-btn { background-color: var(--color-brand-teal); color: var(--color-brand-wordmark); }
+
+/* Verlaufslinie in den CI-Farben, Trenner zwischen Header und Hero */
+.ci-strip { height: 4px; background: linear-gradient(90deg, #3B4496 0%, #0C90BB 25%, #01B3C4 45%, #E8397F 70%, #F9B564 88%, #FFD732 100%); }
 
 .cta-btn {
   display: inline-flex;
@@ -527,6 +534,20 @@ a:hover { opacity: 0.85; }
   white-space: nowrap;
 }
 .cta-btn:hover { opacity: 0.9; }
+.cta-btn.on-navy { background-color: var(--color-brand-yellow); color: var(--color-brand-wordmark); }
+.cta-btn.ghost-navy { background-color: transparent; color: #EFEFEF; border-color: rgba(255,255,255,0.4); }
+
+/* Hero (dunkel, wie /schulungen/) */
+.faq-hero { padding-block: 72px; background-color: var(--color-brand-wordmark); }
+@media (prefers-color-scheme: dark) { .faq-hero { background-color: #0A1019; } }
+.faq-hero .eyebrow { color: var(--color-brand-yellow); margin-bottom: 12px; }
+.faq-hero h1 { color: #FFFFFF; font-size: 44px; line-height: 52px; letter-spacing: -0.8px; margin-bottom: 16px; }
+.faq-hero .subtitle { font-size: 18px; line-height: 27px; color: #C9D2E3; max-width: 620px; margin-bottom: 28px; }
+.faq-hero__actions { display: flex; flex-wrap: wrap; gap: 16px; }
+@media (max-width: 640px) {
+  .faq-hero { padding-block: 56px; }
+  .faq-hero h1 { font-size: 32px; line-height: 40px; }
+}
 
 /* Breadcrumb */
 .breadcrumb { padding-block: 16px 0; }
@@ -689,9 +710,25 @@ footer p { margin-bottom: 8px; }
         </defs>
       </svg>
     </a>
-    <a href="/#contact" class="cta-btn">Kontakt aufnehmen</a>
+    <nav class="faq-topbar__nav" aria-label="Hauptnavigation">
+      <a class="faq-topbar__back" href="/"><span aria-hidden="true">&#8592;</span> Zurück zur Startseite</a>
+      <a href="/#contact" class="cta-btn">Kontakt aufnehmen</a>
+    </nav>
   </div>
 </header>
+<div class="ci-strip" aria-hidden="true"></div>
+
+<section class="faq-hero">
+  <div class="container">
+    <p class="eyebrow">FAQ</p>
+    <h1>Häufig gestellte Fragen</h1>
+    <p class="subtitle">Antworten rund um IT-Beratung, Software- und KI-Entwicklung, IT-Sicherheit und Schulungen bei sib.io in Ulm.</p>
+    <div class="faq-hero__actions">
+      <a class="cta-btn on-navy" href="/#contact">Kontakt aufnehmen</a>
+      <a class="cta-btn ghost-navy" href="#faq-ueber">Fragen durchsuchen</a>
+    </div>
+  </div>
+</section>
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <div class="container">
@@ -706,8 +743,8 @@ footer p { margin-bottom: 8px; }
 <section class="sib-faq" id="faq" aria-labelledby="faq-title">
   <div class="sib-faq__inner">
     <div class="sib-faq__intro">
-      <h1 class="sib-faq__title" id="faq-title">Häufige Fragen</h1>
-      <p class="sib-faq__lead">Antworten rund um IT-Beratung, Software- und KI-Entwicklung, IT-Sicherheit und Schulungen bei sib.io in Ulm.</p>
+      <h2 class="sib-faq__title" id="faq-title">Häufige Fragen</h2>
+      <p class="sib-faq__lead">Nach Themen geordnet – von sib.io über Leistungen und KI bis zu IT-Sicherheit, Schulungen und Zusammenarbeit.</p>
       <p class="faq-updated">Zuletzt aktualisiert: 5. Oktober 2026</p>
       <nav class="sib-faq__nav" aria-label="FAQ-Themen">
       <ul>
