@@ -322,7 +322,11 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 .breadcrumb li[aria-current="page"] { color: var(--text-secondary); }
 
 /* HERO */
-.sch-hero { padding-block: 64px 32px; }
+.sch-hero { padding-block: 72px 96px; background-color: var(--color-brand-wordmark); }
+@media (prefers-color-scheme: dark) { .sch-hero { background-color: #0A1019; } }
+.sch-hero .eyebrow { color: var(--color-brand-yellow); }
+.sch-hero h1 { color: #FFFFFF; }
+.sch-hero .subtitle { color: #C9D2E3; }
 .sch-hero__grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; align-items: start; }
 .sch-hero__actions { display: flex; flex-wrap: wrap; gap: 16px; }
 .sch-hero__aside { display: flex; flex-direction: column; gap: 16px; }
@@ -334,6 +338,12 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 .panel--stat { display: flex; align-items: baseline; gap: 16px; }
 .panel--stat strong { font-family: 'Manrope', sans-serif; font-size: 44px; font-weight: 800; color: var(--text-primary); line-height: 1; }
 .panel--stat span { font-size: 14px; line-height: 1.4; color: var(--text-muted); }
+
+/* Panels auf dunklem Hero-Hintergrund: Glass-Card-Stil wie .format-card */
+.sch-hero .panel { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); }
+.sch-hero .panel__label { color: #93A1BC; }
+.sch-hero .panel ul, .sch-hero .panel--stat strong { color: #FFFFFF; }
+.sch-hero .panel--stat span { color: #C9D2E3; }
 
 @media (max-width: 1024px) {
   .sch-hero__grid { grid-template-columns: 1fr; }
@@ -487,8 +497,8 @@ footer p { margin-bottom: 8px; }
         <h1>Schulungen, die Mitarbeitende mitnehmen statt überrumpeln.</h1>
         <p class="subtitle">Wir bieten praxisnahe Schulungen in all unseren Fachbereichen an, zum Beispiel zu KI-Anwendung, IT-Sicherheit, Microsoft 365 und Datenschutz – zugeschnitten auf Rolle und Kenntnisstand, für einzelne Mitarbeitende, Teams und ganze Abteilungen.</p>
         <div class="sch-hero__actions">
-          <a class="cta-btn" href="#kontakt">Schulung anfragen</a>
-          <a class="cta-btn secondary" href="#themen">Themen ansehen</a>
+          <a class="cta-btn on-navy" href="#kontakt">Schulung anfragen</a>
+          <a class="cta-btn ghost-navy" href="#themen">Themen ansehen</a>
         </div>
       </div>
       <aside class="sch-hero__aside">
