@@ -432,8 +432,9 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 @media (max-width: 640px) { .sch-faq__a { padding-right: 0; } }
 
 /* KONTAKT (dunkle Box, wie .contact auf der Startseite) */
-.sch-contact { background-color: var(--color-brand-wordmark); }
+.sch-contact { background-color: var(--color-brand-wordmark); padding-block: 120px; }
 @media (prefers-color-scheme: dark) { .sch-contact { background-color: #0A1019; } }
+@media (max-width: 640px) { .sch-contact { padding-block: 72px; } }
 @media (min-width: 1200px) {
   .sch-contact {
     background-image: url('/assets/logos/sib_signet.svg');
