@@ -307,19 +307,20 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 .cta-btn.on-navy { background-color: var(--color-brand-yellow); color: var(--color-brand-wordmark); }
 .cta-btn.ghost-navy { background-color: transparent; color: #EFEFEF; border-color: rgba(255,255,255,0.4); }
 
-/* Mini-Header (wie /faq/) */
-.sch-topbar { border-bottom: 1px solid var(--border-default); padding-block: 20px; }
+/* Mini-Header (dunkel, wie in der Vorlage) */
+.sch-topbar { padding-block: 20px; background-color: var(--color-brand-wordmark); }
+@media (prefers-color-scheme: dark) { .sch-topbar { background-color: #0A1019; } }
 .sch-topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .sch-topbar__logo { display: block; width: 140px; flex: 0 0 auto; }
 .sch-topbar__logo svg { display: block; width: 100%; height: auto; }
-.sch-topbar__logo .wordmark-fill { fill: var(--text-primary); }
+.sch-topbar__logo .wordmark-fill { fill: #FFFFFF; }
+.sch-topbar__nav { display: flex; align-items: center; gap: 28px; }
+.sch-topbar__back { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #C9D2E3; }
+.sch-topbar__back:hover { opacity: 1; color: #FFFFFF; }
+.sch-topbar .cta-btn { background-color: var(--color-brand-teal); color: var(--color-brand-wordmark); }
 
-.breadcrumb { padding-block: 16px 0; }
-.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; font-size: 14px; color: var(--text-muted); }
-.breadcrumb li:not(:last-child)::after { content: "/"; margin-left: 6px; color: var(--border-default); }
-.breadcrumb a { color: var(--text-muted); }
-.breadcrumb a:hover { color: var(--accent-secondary); }
-.breadcrumb li[aria-current="page"] { color: var(--text-secondary); }
+/* Verlaufslinie in den CI-Farben, Trenner zwischen Header und Hero */
+.ci-strip { height: 4px; background: linear-gradient(90deg, #3B4496 0%, #0C90BB 25%, #01B3C4 45%, #E8397F 70%, #F9B564 88%, #FFD732 100%); }
 
 /* HERO */
 .sch-hero { padding-block: 72px 96px; background-color: var(--color-brand-wordmark); }
@@ -483,18 +484,13 @@ footer p { margin-bottom: 8px; }
         </defs>
       </svg>
     </a>
-    <a href="#kontakt" class="cta-btn">Schulung anfragen</a>
+    <nav class="sch-topbar__nav" aria-label="Hauptnavigation">
+      <a class="sch-topbar__back" href="/"><span aria-hidden="true">&#8592;</span> Zurück zur Startseite</a>
+      <a href="#kontakt" class="cta-btn">Schulung anfragen</a>
+    </nav>
   </div>
 </header>
-
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="container">
-    <ol>
-      <li><a href="/">Startseite</a></li>
-      <li aria-current="page">Schulungen</li>
-    </ol>
-  </div>
-</nav>
+<div class="ci-strip" aria-hidden="true"></div>
 
 <main>
 
