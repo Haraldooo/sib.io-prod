@@ -363,10 +363,6 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 @media (max-width: 640px) { .steps { grid-template-columns: 1fr; } }
 
 /* THEMEN */
-.section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; margin-bottom: 40px; }
-.section-head .section-subtitle { margin-bottom: 0; }
-@media (max-width: 1024px) { .section-head { flex-direction: column; align-items: flex-start; gap: 16px; } }
-
 .topic-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; }
 .topic-card { display: flex; flex-direction: column; gap: 14px; padding: 32px; background-color: var(--surface-page); border: 1px solid var(--border-default); border-radius: var(--radius-lg); transition: box-shadow 200ms ease, transform 200ms ease; }
 .topic-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
@@ -525,15 +521,15 @@ footer p { margin-bottom: 8px; }
 
   <section style="padding-block: 48px 8px;">
     <div class="container">
-      <p class="section-subtitle" style="font-size: 18px; line-height: 27px; max-width: 680px; margin-bottom: 0;">Neue IT-Lösungen und KI-Tools werden dann nachhaltig genutzt, wenn Mitarbeitende ihren Mehrwert im eigenen Arbeitsalltag erleben. Genau dafür gibt es sib.school.</p>
+      <p class="section-subtitle" style="font-size: 18px; line-height: 27px; max-width: 680px; margin: 0 auto; text-align: center;">Neue IT-Lösungen und KI-Tools werden dann nachhaltig genutzt, wenn Mitarbeitende ihren Mehrwert im eigenen Arbeitsalltag erleben. Genau dafür gibt es sib.school.</p>
     </div>
   </section>
 
   <section id="ansatz" style="padding-top: 24px;">
     <div class="container">
       <div class="sch-approach__box">
-        <p class="eyebrow">Unser Ansatz</p>
-        <h2 style="margin-bottom: 0; max-width: 560px;">Praxis statt abstrakter Theorie.</h2>
+        <p class="eyebrow" style="text-align: center;">Unser Ansatz</p>
+        <h2 style="margin: 0 auto; max-width: 560px; text-align: center;">Praxis statt abstrakter Theorie.</h2>
         <ol class="steps">
           <li class="step">
             <span class="step__num" style="color: var(--color-brand-blue);">01.</span>
@@ -562,10 +558,10 @@ footer p { margin-bottom: 8px; }
 
   <section id="themen" aria-labelledby="topics-title">
     <div class="container">
-      <div style="margin-bottom: 40px;">
+      <div style="margin-bottom: 40px; text-align: center;">
         <p class="eyebrow">Themen</p>
         <h2 id="topics-title">Wissen auf jeder Ebene.</h2>
-        <p class="section-subtitle" style="margin-bottom: 0; max-width: 640px;">Jede Schulung stimmen wir auf Ihre Bedürfnisse, die Rolle der Teilnehmenden und ihren Kenntnisstand ab.</p>
+        <p class="section-subtitle" style="margin: 0 auto; max-width: 640px;">Jede Schulung stimmen wir auf Ihre Bedürfnisse, die Rolle der Teilnehmenden und ihren Kenntnisstand ab.</p>
       </div>
       <div class="topic-grid">
         <article class="topic-card">
@@ -621,12 +617,10 @@ footer p { margin-bottom: 8px; }
 
   <section class="sch-formats" id="formate" aria-labelledby="formats-title">
     <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow eyebrow--inverse">Formate</p>
-          <h2 id="formats-title" style="margin-bottom: 0;">Dort, wo Ihr Team am besten lernt.</h2>
-        </div>
-        <p class="section-subtitle">Für einzelne Mitarbeitende ebenso wie für ganze Teams und Abteilungen.</p>
+      <div style="margin-bottom: 40px; text-align: center;">
+        <p class="eyebrow eyebrow--inverse">Formate</p>
+        <h2 id="formats-title">Dort, wo Ihr Team am besten lernt.</h2>
+        <p class="section-subtitle" style="margin: 0 auto; max-width: 640px;">Für einzelne Mitarbeitende ebenso wie für ganze Teams und Abteilungen.</p>
       </div>
       <div class="format-grid">
         <article class="format-card">
