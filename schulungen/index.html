@@ -434,14 +434,16 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 /* KONTAKT (dunkle Box, wie .contact auf der Startseite) */
 .sch-contact { background-color: var(--color-brand-wordmark); }
 @media (prefers-color-scheme: dark) { .sch-contact { background-color: #0A1019; } }
-.sch-contact__box { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; }
+@media (min-width: 1200px) {
+  .sch-contact {
+    background-image: url('/assets/logos/sib_signet.svg');
+    background-repeat: no-repeat;
+    background-position: right -80px bottom -110px;
+    background-size: 480px auto;
+  }
+}
 .sch-contact__text h2 { color: #FFFFFF; }
 .sch-contact__text p { font-size: 18px; line-height: 27px; color: #C9D2E3; max-width: 520px; margin-bottom: 24px; }
-.sch-contact__data { display: flex; flex-direction: column; gap: 14px; font-size: 16px; }
-.sch-contact__data a { color: #EFEFEF; }
-.sch-contact__data a:hover { color: var(--color-brand-yellow); }
-.sch-contact__data span { color: #C9D2E3; line-height: 1.5; }
-@media (max-width: 1024px) { .sch-contact__box { grid-template-columns: 1fr; } }
 
 /* Abschließende FAQ-CTA-Leiste (wie /faq/) */
 .sch-cta { background-color: var(--surface-raised); border-top: 1px solid var(--border-default); border-bottom: 1px solid var(--border-default); padding-block: 56px; text-align: center; }
@@ -696,19 +698,11 @@ footer p:last-child { margin-top: 12px; }
 
 <section class="sch-contact" id="kontakt" aria-labelledby="contact-title">
   <div class="container">
-    <div class="sch-contact__box">
-      <div class="sch-contact__text">
-        <p class="eyebrow eyebrow--inverse">Kontakt</p>
-        <h2 id="contact-title">Welche Schulung braucht Ihr Team?</h2>
-        <p>Erzählen Sie uns von Ihren Zielen und Ihrem Team – wir stellen die passenden Inhalte und das richtige Format zusammen, im kostenlosen und unverbindlichen Erstgespräch.</p>
-        <a class="cta-btn on-navy" href="mailto:hallo@sib.io?subject=Schulungsanfrage">Schulung anfragen</a>
-      </div>
-      <address class="sch-contact__data">
-        <a href="tel:0049731141121130">+49 (0)731 – 14 112 113 – 0</a>
-        <a href="tel:00491708322979">+49 (0)170 – 83 22 979</a>
-        <a href="mailto:hallo@sib.io">hallo@sib.io</a>
-        <span>Büro: Judenhof 1<br>89073 Ulm</span>
-      </address>
+    <div class="sch-contact__text">
+      <p class="eyebrow eyebrow--inverse">Kontakt</p>
+      <h2 id="contact-title">Welche Schulung braucht Ihr Team?</h2>
+      <p>Erzählen Sie uns von Ihren Zielen und Ihrem Team – wir stellen die passenden Inhalte und das richtige Format zusammen, im kostenlosen und unverbindlichen Erstgespräch.</p>
+      <a class="cta-btn on-navy" href="mailto:hallo@sib.io?subject=Schulungsanfrage">Schulung anfragen</a>
     </div>
   </div>
 </section>
