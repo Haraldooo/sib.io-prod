@@ -323,14 +323,15 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 .ci-strip { height: 4px; background: linear-gradient(90deg, #3B4496 0%, #0C90BB 25%, #01B3C4 45%, #E8397F 70%, #F9B564 88%, #FFD732 100%); }
 
 /* HERO */
-.sch-hero { padding-block: 72px 96px; background-color: var(--color-brand-wordmark); }
+.sch-hero { padding-block: 120px 152px; background-color: var(--color-brand-wordmark); }
+@media (max-width: 640px) { .sch-hero { padding-block: 72px 96px; } }
 @media (prefers-color-scheme: dark) { .sch-hero { background-color: #0A1019; } }
 .sch-hero .eyebrow { color: var(--color-brand-yellow); }
 .sch-hero h1 { color: #FFFFFF; }
 .sch-hero .subtitle { color: #C9D2E3; }
-.sch-hero__grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; align-items: start; }
-.sch-hero__actions { display: flex; flex-wrap: wrap; gap: 16px; }
-.sch-hero__aside { display: flex; flex-direction: column; gap: 16px; }
+.sch-hero__grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 64px; align-items: start; }
+.sch-hero__actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px; }
+.sch-hero__aside { display: flex; flex-direction: column; gap: 20px; }
 .panel { background-color: var(--surface-raised); border: 1px solid var(--border-default); border-radius: var(--radius-xl); padding: 28px; }
 .panel__label { font-size: 12px; font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; }
 .panel ul { list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 16px; color: var(--text-primary); }
@@ -522,11 +523,9 @@ footer p { margin-bottom: 8px; }
     </div>
   </section>
 
-  <section aria-labelledby="why-title">
+  <section>
     <div class="container">
-      <p class="eyebrow">Warum Schulungen</p>
-      <h2 id="why-title" style="max-width: 680px;">Viele IT-Projekte scheitern nicht an der Technik.</h2>
-      <p class="section-subtitle" style="font-size: 18px; line-height: 27px; max-width: 680px;">Sondern an mangelnder Akzeptanz der Anwender. Wer neue Werkzeuge nur übergestülpt bekommt, reagiert mit Überforderung – Change Fatigue. Neue IT-Lösungen und KI-Tools werden dann nachhaltig genutzt, wenn Mitarbeitende ihren Mehrwert im eigenen Arbeitsalltag erleben. Genau dafür gibt es sib.school.</p>
+      <p class="section-subtitle" style="font-size: 18px; line-height: 27px; max-width: 680px; margin-bottom: 0;">Neue IT-Lösungen und KI-Tools werden dann nachhaltig genutzt, wenn Mitarbeitende ihren Mehrwert im eigenen Arbeitsalltag erleben. Genau dafür gibt es sib.school.</p>
     </div>
   </section>
 
