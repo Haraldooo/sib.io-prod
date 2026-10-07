@@ -549,21 +549,6 @@ a:hover { opacity: 0.85; }
   .faq-hero h1 { font-size: 32px; line-height: 40px; }
 }
 
-/* Breadcrumb */
-.breadcrumb { padding-block: 16px 0; }
-.breadcrumb ol {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  font-size: 14px;
-  color: var(--text-muted);
-}
-.breadcrumb li:not(:last-child)::after { content: "/"; margin-left: 6px; color: var(--border-default); }
-.breadcrumb a { color: var(--text-muted); }
-.breadcrumb a:hover { color: var(--accent-secondary); }
-.breadcrumb li[aria-current="page"] { color: var(--text-secondary); }
-
 .faq-updated {
   font-size: 13px;
   color: var(--text-muted);
@@ -729,15 +714,6 @@ footer p { margin-bottom: 8px; }
     </div>
   </div>
 </section>
-
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="container">
-    <ol>
-      <li><a href="/">Startseite</a></li>
-      <li aria-current="page">Häufig gestellte Fragen</li>
-    </ol>
-  </div>
-</nav>
 
 <main>
 <section class="sib-faq" id="faq" aria-labelledby="faq-title">
