@@ -601,7 +601,7 @@ footer p:last-child { margin-top: 12px; }
     --sib-tint: #F3F5F9;
     color: var(--sib-text);
     font-family: inherit;
-    padding: clamp(2rem, 6vw, 4rem) clamp(1.25rem, 5vw, 3rem) clamp(3rem, 8vw, 6rem);
+    padding-block: clamp(2rem, 6vw, 4rem) clamp(3rem, 8vw, 6rem);
   }
   @media (prefers-color-scheme: dark) {
     .sib-faq {
@@ -614,7 +614,6 @@ footer p:last-child { margin-top: 12px; }
     }
   }
   .sib-faq__inner {
-    max-width: 1120px; margin: 0 auto;
     display: grid; grid-template-columns: 260px 1fr; gap: clamp(2rem, 5vw, 5rem);
     align-items: start;
   }
@@ -719,7 +718,7 @@ footer p:last-child { margin-top: 12px; }
 
 <main>
 <section class="sib-faq" id="faq" aria-labelledby="faq-title">
-  <div class="sib-faq__inner">
+  <div class="container sib-faq__inner">
     <div class="sib-faq__intro">
       <h2 class="sib-faq__title" id="faq-title">Fragen &amp; Antworten zu sib.io</h2>
       <p class="sib-faq__lead">Nach Themen geordnet – von sib.io über Leistungen und KI bis zu IT-Sicherheit, Schulungen und Zusammenarbeit.</p>
