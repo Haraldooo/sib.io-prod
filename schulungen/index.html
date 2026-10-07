@@ -384,7 +384,8 @@ h3 { font-weight: 600; font-size: 21px; line-height: 29px; letter-spacing: -0.2p
 }
 
 /* EU AI ACT */
-.aiact__box { border: 1px solid var(--border-default); border-radius: var(--radius-xl); padding: clamp(28px, 5vw, 48px); display: grid; grid-template-columns: 1fr 1.6fr; gap: 32px; align-items: center; }
+.sch-aiact { background-color: var(--surface-raised); }
+.aiact__box { padding: clamp(28px, 5vw, 48px); display: grid; grid-template-columns: 1fr 1.6fr; gap: 32px; align-items: center; }
 .aiact__box strong { display: block; font-family: 'Manrope', sans-serif; font-size: 28px; line-height: 1.2; font-weight: 800; color: var(--text-primary); margin-top: 6px; }
 .aiact__box p { font-size: 17px; line-height: 26px; color: var(--text-secondary); }
 .aiact__box small { display: block; margin-top: 10px; font-size: 13px; color: var(--text-muted); }
@@ -519,17 +520,12 @@ footer p { margin-bottom: 8px; }
     </div>
   </section>
 
-  <section style="padding-block: 48px 8px;">
-    <div class="container">
-      <p class="section-subtitle" style="font-size: 18px; line-height: 27px; max-width: 680px; margin: 0 auto; text-align: center;">Neue IT-Lösungen und KI-Tools werden dann nachhaltig genutzt, wenn Mitarbeitende ihren Mehrwert im eigenen Arbeitsalltag erleben. Genau dafür gibt es sib.school.</p>
-    </div>
-  </section>
-
-  <section id="ansatz" style="padding-top: 24px;">
+  <section id="ansatz">
     <div class="container">
       <div class="sch-approach__box">
         <p class="eyebrow" style="text-align: center;">Unser Ansatz</p>
         <h2 style="margin: 0 auto; max-width: 560px; text-align: center;">Praxis statt abstrakter Theorie.</h2>
+        <p class="section-subtitle" style="margin: 12px auto 0; max-width: 640px; text-align: center;">Neue IT-Lösungen und KI-Tools werden dann nachhaltig genutzt, wenn Mitarbeitende ihren Mehrwert im eigenen Arbeitsalltag erleben. Genau dafür gibt es sib.school.</p>
         <ol class="steps">
           <li class="step">
             <span class="step__num" style="color: var(--color-brand-blue);">01.</span>
@@ -600,7 +596,7 @@ footer p { margin-bottom: 8px; }
     </div>
   </section>
 
-  <section aria-labelledby="aiact-title">
+  <section class="sch-aiact" aria-labelledby="aiact-title">
     <div class="container">
       <div class="aiact__box">
         <div>
