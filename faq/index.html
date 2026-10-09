@@ -513,6 +513,8 @@ a:hover { opacity: 0.85; }
 .faq-topbar__back { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #C9D2E3; }
 .faq-topbar__back:hover { opacity: 1; color: #FFFFFF; }
 .faq-topbar .cta-btn { background-color: var(--color-brand-teal); color: var(--color-brand-wordmark); }
+/* Mobil: nur das Logo im Header, Zurück-Link und Button ausblenden */
+@media (max-width: 640px) { .faq-topbar__nav { display: none; } }
 
 /* Verlaufslinie in den CI-Farben, Trenner zwischen Header und Hero */
 .ci-strip { height: 4px; background: linear-gradient(90deg, #3B4496 0%, #0C90BB 25%, #01B3C4 45%, #E8397F 70%, #F9B564 88%, #FFD732 100%); }
